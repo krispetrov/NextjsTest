@@ -1,10 +1,13 @@
 import { ThemeProvider } from "styled-components";
 import { theme } from "~/styles";
+import Main from "../sections/Main/Main";
+
+
 
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
+      <Component { ...pageProps} />
     </ThemeProvider>
   );
 }
